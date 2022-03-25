@@ -169,8 +169,8 @@ p {
   box-shadow: 0 0 10px springgreen;
 }
 
-#modal {
-  display: none;
+#modal{
+display: none;
   width: 365px;
   padding: 20px;
   border-radius: 15px;
