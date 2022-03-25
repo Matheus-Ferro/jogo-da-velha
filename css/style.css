@@ -170,7 +170,7 @@ p {
 }
 
 #modal {
-  display: block;
+  display: none;
   width: 365px;
   padding: 20px;
   border-radius: 15px;
