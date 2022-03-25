@@ -14,12 +14,12 @@ h1 {
   margin: 0 0 10px 0;
 }
 
-h2{
+h2 {
   font-size: 25pt;
   margin: 15px 0 0 0;
 }
 
-p:first-child{
+p:first-child {
   margin: 0;
 }
 
@@ -100,19 +100,19 @@ p {
   transition: 200ms;
 }
 
-.name:hover{
+.name:hover {
   border: 2px solid #00ff7f;
 }
 
-#label_player1::before{
-  content:'🛡';
+#label_player1::before {
+  content: "🛡";
   color: springgreen;
   font-size: 20pt;
   line-height: 100px;
   margin-right: 10px;
 }
 
-#label_player1::after{
+#label_player1::after {
   content: attr(data-content);
   color: springgreen;
   font-size: 20pt;
@@ -120,15 +120,15 @@ p {
   margin-left: 5px;
 }
 
-#label_player2::after{
-  content:'⚔';
+#label_player2::after {
+  content: "⚔";
   color: springgreen;
   font-size: 20pt;
   line-height: 100px;
   margin-left: 10px;
 }
 
-#label_player2::before{
+#label_player2::before {
   content: attr(data-content);
   color: springgreen;
   font-size: 20pt;
@@ -151,6 +151,7 @@ p {
 
 .button {
   display: inline-block;
+  vertical-align: middle;
   padding: 10px;
   font-weight: 600;
   background-color: black;
@@ -158,8 +159,6 @@ p {
   border-radius: 10px;
   width: 90px;
   height: 40px;
-  margin: auto;
-  margin-top: 15px;
   cursor: pointer;
   transition: 200ms;
 }
@@ -171,7 +170,7 @@ p {
 }
 
 #modal {
-  display: none;
+  display: block;
   width: 365px;
   padding: 20px;
   border-radius: 15px;
