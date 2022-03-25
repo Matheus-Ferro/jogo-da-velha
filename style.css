@@ -1,0 +1,186 @@
+body {
+  background-color: black;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+  font-weight: 900;
+  font-size: 32pt;
+  color: springgreen;
+  margin: 0 0 10px 0;
+}
+
+h2{
+  font-size: 25pt;
+  margin: 15px 0 0 0;
+}
+
+p:first-child{
+  margin: 0;
+}
+
+p {
+  color: springgreen;
+  font-size: 15pt;
+  margin: 15px 0 0 0;
+}
+
+.square {
+  position: relative;
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+  background-color: #222222;
+  border: 2px solid springgreen;
+  border-radius: 10px;
+  display: inline-block;
+  margin: 5px;
+  transition: 200ms;
+}
+.square:hover {
+  background-color: #111111;
+  box-shadow: 0 0 15px springgreen;
+}
+.square:before {
+  position: absolute;
+  content: attr(data-content);
+  font-size: 10px;
+  top: 4px;
+  left: 5px;
+}
+
+.lines {
+  font-size: 0;
+}
+
+.x {
+  position: relative;
+}
+.x:after {
+  color: springgreen;
+  position: absolute;
+  content: "⚔";
+  font-size: 75px;
+  line-height: 100px;
+  left: 0;
+  right: 0;
+}
+
+.o {
+  position: relative;
+}
+.o:after {
+  color: springgreen;
+  position: absolute;
+  content: "🛡";
+  font-size: 75px;
+  line-height: 100px;
+  left: 0;
+  right: 0;
+}
+
+.name {
+  display: inline-block;
+  border: solid 1px;
+  border: 2px solid #00ff7f20;
+  border-radius: 10px;
+  background-color: black;
+  padding: 5px;
+  font-weight: 600;
+  font-size: 15pt;
+  color: white;
+  margin: auto;
+  margin-top: 15px;
+  cursor: text;
+  width: 100px;
+  transition: 200ms;
+}
+
+.name:hover{
+  border: 2px solid #00ff7f;
+}
+
+#label_player1::before{
+  content:'🛡';
+  color: springgreen;
+  font-size: 20pt;
+  line-height: 100px;
+  margin-right: 10px;
+}
+
+#label_player1::after{
+  content: attr(data-content);
+  color: springgreen;
+  font-size: 20pt;
+  line-height: 100px;
+  margin-left: 5px;
+}
+
+#label_player2::after{
+  content:'⚔';
+  color: springgreen;
+  font-size: 20pt;
+  line-height: 100px;
+  margin-left: 10px;
+}
+
+#label_player2::before{
+  content: attr(data-content);
+  color: springgreen;
+  font-size: 20pt;
+  line-height: 100px;
+  margin-right: 5px;
+}
+
+.score {
+  display: inline-block;
+  border: none;
+  background-color: black;
+  padding: 10px;
+  font-weight: 600;
+  font-size: 15pt;
+  color: white;
+  margin: auto;
+  margin-top: 15px;
+  cursor: text;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px;
+  font-weight: 600;
+  background-color: black;
+  border: 2px solid springgreen;
+  border-radius: 10px;
+  width: 90px;
+  height: 40px;
+  margin: auto;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: 200ms;
+}
+
+.button:hover {
+  color: black;
+  background-color: springgreen;
+  box-shadow: 0 0 10px springgreen;
+}
+
+#modal {
+  display: none;
+  width: 365px;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: black;
+  border: 2px solid springgreen;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 10;
+}

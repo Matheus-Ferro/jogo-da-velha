@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projeto: Jogo da Velha</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1>Tic-Tac-Toe</h1>
+    <div class="stage">
+      <div class="lines">
+        <div id="0" class="square"></div>
+        <div id="1" class="square"></div>
+        <div id="2" class="square"></div>
+      </div>
+      <div class="lines">
+        <div id="3" class="square"></div>
+        <div id="4" class="square"></div>
+        <div id="5" class="square"></div>
+      </div>
+      <div class="lines">
+        <div id="6" class="square"></div>
+        <div id="7" class="square"></div>
+        <div id="8" class="square"></div>
+      </div>
+      <div id="player_table">
+        <label id="label_player1">
+          <input
+            class="name"
+            id="player1_name"
+            type="text"
+            placeholder="Player 1"
+        /></label>
+        <div class="score" id="player1_score">0</div>
+        x
+        <div class="score" id="player2_score">0</div>
+        <label id="label_player2"
+          ><input
+            class="name"
+            id="player2_name"
+            type="text"
+            placeholder="Player 2"
+        /></label>
+      </div>
+      <div id="buttons">
+        <div class="button" id="reset_score" onclick="reset_score()">
+          Reset Score
+        </div>
+        <div class="button" id="reset_game" onclick="handle_reset_game()">
+          Reset Game
+        </div>
+      </div>
+    </div>
+    <div id="modal">
+      <p>Congratulations</p>
+      <h2 id="winner"></h2>
+      <p>You Won!</p>
+      <h3 id="sequence"></h3>
+      <div class="button" id="reset_score" onclick="reset_score()">
+        Reset Score
+      </div>
+      <div class="button" id="reset_game" onclick="handle_reset_game()" on>
+        Reset Game
+      </div>
+    </div>
+    <script src="./game.js"></script>
+    <script src="./interface.js"></script>
+  </body>
+</html>
