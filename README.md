@@ -1,2 +1,3 @@
 # jogo-da-velha
-Jodo da Velha feito com o auxilio do curso de desenvolvimento web fullstack
+Jogo da velha simples pra praticar
+<a href="https://matheus-ferro.github.io/jogo-da-velha/">Acesse Aqui</a>
